@@ -1,0 +1,85 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/login_back2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context="benselem.moez.theweather.CurrentFragment">
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:textColor="#fff"
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter a city :"
+        android:fontFamily="sans-serif-thin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text=""
+        android:background="@drawable/map_ico"
+        android:id="@+id/btMap"
+        android:layout_alignTop="@+id/editText1"
+        android:onClick="map"
+        android:clickable="true"
+        android:layout_toEndOf="@+id/editText1" />
+
+    <Button
+        android:textColor="#fff"
+        android:id="@+id/btSearch"
+        android:background="@drawable/bt_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="What's the weather !"
+        android:onClick="findWeather"
+        android:fontFamily="sans-serif-thin"
+        android:layout_below="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_alignEnd="@+id/editText1" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btSearch"
+        ads:adSize="BANNER"
+        android:layout_marginTop="5dp"
+        ads:adUnitId="ca-app-pub-7087198421941611/7953336124">
+    </com.google.android.gms.ads.AdView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/adView">
+
+        <include
+            layout="@layout/card_weather"
+ />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

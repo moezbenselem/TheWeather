@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btRise"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/sunrise"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/item_sunsrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="sunrise"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/btSet"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+
+        android:background="@drawable/sunset"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/item_sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="sunset"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

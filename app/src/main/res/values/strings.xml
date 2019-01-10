@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">The Weather</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="section_format" translatable="false">Hello World from section: %1$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="txt_city">City</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

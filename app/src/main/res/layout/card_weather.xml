@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_weather"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:alpha="0.7"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:visibility="gone"
+    card_view:cardBackgroundColor="#DDD"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/item_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btState"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_marginLeft="5dp"
+
+
+            android:layout_toEndOf="@+id/item_city"
+            android:clickable="false" />
+
+
+        <TextView
+            android:id="@+id/item_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/item_city"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-thin"
+
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/item_general"
+            android:layout_centerVertical="true"
+
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/item_desc"
+            android:layout_centerVertical="true"
+
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/item_temp"
+            android:layout_centerVertical="true"
+
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/item_humidity"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_wind"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btRise"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sunrise"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/item_sunsrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:padding="5dp"
+
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/btSet"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
+                android:background="@drawable/sunset"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/item_sunset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:padding="5dp"
+
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
